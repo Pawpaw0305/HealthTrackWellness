@@ -1,0 +1,320 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #f4f7f9;
+  color: #333;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  background-color: #001845;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.sidebar img {
+  width: 100px;
+  height: 60px;
+  margin-bottom: 15px;
+}
+
+.sidebar h2 {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.sidebar nav ul {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+
+.sidebar nav ul li {
+  padding: 15px 20px;
+  margin: 10px 0;
+  width: 100%;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar nav ul li:hover {
+  background-color: #ff7300; 
+}
+
+.sidebar nav ul li.active {
+  background-color: #ff7300;
+  font-weight: bold;
+}
+
+.sidebar nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 20px;
+  }
+
+  .sidebar nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .sidebar nav ul li {
+    margin: 0;
+    padding: 10px;
+  }
+}
+
+.main-content {
+  flex: 1;
+  padding: 2rem;
+  height: 100vh;
+  overflow-y: auto;
+  margin-left: 250px; 
+}
+
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.cards {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  flex: 1 1 200px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  width: 100%;
+  height: 200px; 
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.card h3 {
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+}
+
+.card p {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #27ae60;
+}
+
+.metrics h2 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  color: #2c3e50;
+}
+
+.overview {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.overview div {
+  background-color: white;
+  padding: 1rem 1.2rem;
+  border-radius: 10px;
+  flex: 1 1 200px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, background-color 0.3s;
+}
+
+.overview div:hover {
+  transform: translateY(-4px);
+  background-color: #f0f9f2;
+}
+
+.overview h4 {
+  color: #2c3e50;
+  margin-bottom: 0.25rem;
+}
+
+.overview p {
+  font-weight: bold;
+  color: #2980b9;
+}
+
+.weekly-section {
+  position: relative;
+  padding: 2rem;
+  border-radius: 12px;
+  background: linear-gradient(rgba(0, 0, 0, 0.644), rgba(0, 0, 0, 0.644)),
+              url('../img/weekly.avif') no-repeat center center;
+  background-size: cover;
+  color: #fff;
+  margin-bottom: 2rem;
+}
+
+.weekly-section h2 {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.weekly-section .overview {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.weekly-section .overview div {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 1rem;
+  border-radius: 10px;
+  width: 240px;
+  text-align: center;
+  backdrop-filter: blur(2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.weekly-section h4 {
+  margin-bottom: 0.5rem;
+  color: #f9d342;
+}
+
+.weekly-section p {
+  font-size: 0.95rem;
+  color: #fff;
+}
+
+.tips-section {
+  position: relative;
+  padding: 2rem;
+  border-radius: 12px;
+  background: linear-gradient(rgba(0, 0, 0, 0.644), rgba(0, 0, 0, 0.644)),
+              url('../img/fitness.avif') no-repeat center center;
+  background-size: cover;
+  color: #fff;
+  margin-bottom: 2rem;
+}
+
+.tips-section h2 {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.tips-section .overview {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.tips-section .overview div {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 1rem;
+  border-radius: 10px;
+  width: 240px;
+  text-align: center;
+  backdrop-filter: blur(2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.tips-section h4 {
+  margin-bottom: 0.5rem;
+  color: #f9d342;
+}
+
+.tips-section p {
+  font-size: 0.95rem;
+  color: #fff;
+}
+
+
+footer {
+    color: #888;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.95rem;
+    z-index: 100;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    display: flex;
+    overflow-x: auto;
+  }
+
+  .sidebar ul {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .cards,
+  .overview {
+    flex-direction: column;
+  }
+
+  .card,
+  .overview div {
+    width: 100%;
+  }
+}

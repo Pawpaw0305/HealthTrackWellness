@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Settings - HealthTrack</title>
+  <link rel="icon" type="image/x-icon" href="img/favicon.ico" style="width: 100px;"/>
+  <link rel="stylesheet" href="css/settings.css" />
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <img src="img/favicon.ico" alt="HealthTrack Logo" />
+      <h2>HealthTrack</h2>
+      <nav>
+        <ul>
+          <li><a href="index.html">Dashboard</a></li>
+          <li><a href="nutrition.html">Nutrition</a></li>
+          <li><a href="workouts.html">Workouts</a></li>
+          <li><a href="progress.html">Progress</a></li>
+          <li class="active">Settings</li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+        <header>
+            <h1>User Settings</h1>
+            <p>Update your preferences and personal data</p>
+        </header>
+
+        <section class="metrics">
+            <div class="overview">
+            <div><h4>Username</h4><p>dreamwarwick</p></div>
+            <div><h4>Email</h4><p>dreamwarwick@gmail.com</p></div>
+            <div><h4>Daily Goal</h4><p>2,000 kcal</p></div>
+            <div><h4>Notifications</h4><p>Enabled</p></div>
+            </div>
+        </section>
+
+        <div class="card account-settings">
+            <h3>Update Account Info</h3>
+            <form class="account-form">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Enter your name">
+
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your email">
+
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter new password">
+
+                <button type="submit">Update</button>
+            </form>
+        </div>
+
+
+        <section class="cards">
+            <div class="card">
+                <h3>Account Preferences</h3>
+                <p>Modify email, password, and profile picture</p>
+            </div>
+            <div class="card">
+                <h3>Privacy Settings</h3>
+                <p>Control your data and visibility</p>
+            </div>
+                <div class="card">
+                <h3>Reminders</h3>
+                <p>Customize workout & hydration alerts</p>
+            </div>
+            <div class="card">
+                <h3>Sync Devices</h3>
+                <p>Manage integrations with smartwatches</p>
+            </div>
+            <div class="card">
+                <h3>Theme</h3>
+                <p>Light / Dark Mode</p>
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            <div class="card">
+                <h3>Security</h3>
+                <p>Change password and enable 2FA</p>
+            </div>
+            <div class="card">
+                <h3>Language</h3>
+                <p>
+                    <select>
+                    <option>English</option>
+                    <option>Spanish</option>
+                    <option>French</option>
+                    <option>Filipino</option>
+                    </select>
+                </p>
+            </div>
+            <div class="card">
+                <h3>Accessibility</h3>
+                <p>
+                    <label><input type="checkbox" /> High Contrast Mode</label><br>
+                    <label><input type="checkbox" /> Larger Text</label>
+                </p>
+            </div>
+        </section>
+
+        <section class="quotes-section">
+            <div class="quote-box">
+            “Your health is your wealth — track it with purpose.”
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 HealthTrack. All rights reserved.</p>
+        </footer>
+    </main>
+  </div>
+</body>
+</html>

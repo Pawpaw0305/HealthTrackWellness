@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nutrition - HealthTrack</title>
+  <link rel="icon" type="image/x-icon" href="img/favicon.ico" style="width: 100px;"/>
+  <link rel="stylesheet" href="css/nutrition.css" />
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <img src="img/favicon.ico" alt="HealthTrack Logo" />
+      <h2>HealthTrack</h2>
+      <nav>
+        <ul>
+          <li><a href="index.html">Dashboard</a></li>
+          <li class="active">Nutrition</li>
+          <li><a href="workouts.html">Workouts</a></li>
+          <li><a href="progress.html">Progress</a></li>
+          <li><a href="settings.html">Settings</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+      <header>
+        <h1>Nutrition Overview</h1>
+        <p>Your daily meal and intake breakdown</p>
+      </header>
+
+      <!-- Meal Cards with Images -->
+      <section class="cards">
+        <div class="card">
+          <img src="img/breakfast.jpg" alt="Breakfast" />
+          <h3>Breakfast</h3>
+          <p>🍳 450 kcal - Eggs, Toast & Avocado</p>
+        </div>
+        <div class="card">
+          <img src="img/lunch.webp" alt="Lunch" />
+          <h3>Lunch</h3>
+          <p>🥗 620 kcal - Chicken Salad with Quinoa</p>
+        </div>
+        <div class="card">
+          <img src="img/dinner.jpg" alt="Dinner" />
+          <h3>Dinner</h3>
+          <p>🍝 580 kcal - Grilled Fish with Veggies</p>
+        </div>
+        <div class="card">
+          <img src="img/snack.jpg" alt="Snacks" />
+          <h3>Snacks</h3>
+          <p>🍌 200 kcal - Banana & Greek Yogurt</p>
+        </div>
+      </section>
+
+      <!-- Macronutrients -->
+      <section class="metrics">
+        <h2>Macronutrients</h2>
+        <div class="overview">
+          <div class="card">
+            <img src="img/carbohydrdates.jpg" alt="Carbohydrates" />
+            <h4>Carbohydrates</h4>
+            <p>210g</p>
+          </div>
+          <div class="card">
+            <img src="img/protien.jpg" alt="" />
+            <h4>Protein</h4>
+            <p>110g</p>
+          </div>
+          <div class="card">
+            <img src="img/fats.jpg" alt="" />
+            <h4>Fat</h4>
+            <p>60g</p>
+          </div>
+          <div class="card">
+            <img src="img/fiber.webp" alt="" />
+            <h4>Fiber</h4>
+            <p>25g</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Nutrient Table -->
+      <section class="metrics">
+        <h2>Today's Nutrient Breakdown</h2>
+        <div style="overflow-x: auto">
+          <table style="width: 100%; border-collapse: collapse; background: white; border-radius: 10px; overflow: hidden;">
+            <thead style="background-color: #2c3e50; color: white;">
+              <tr>
+                <th style="padding: 12px">Meal</th>
+                <th style="padding: 12px">Calories</th>
+                <th style="padding: 12px">Carbs</th>
+                <th style="padding: 12px">Protein</th>
+                <th style="padding: 12px">Fat</th>
+                <th style="padding: 12px">Fiber</th>
+              </tr>
+            </thead>
+            <tbody style="text-align: center">
+              <tr>
+                <td style="padding: 10px">Breakfast</td>
+                <td>450</td>
+                <td>50g</td>
+                <td>20g</td>
+                <td>15g</td>
+                <td>5g</td>
+              </tr>
+              <tr style="background-color: #f9f9f9;">
+                <td style="padding: 10px">Lunch</td>
+                <td>620</td>
+                <td>60g</td>
+                <td>35g</td>
+                <td>20g</td>
+                <td>7g</td>
+              </tr>
+              <tr>
+                <td style="padding: 10px">Dinner</td>
+                <td>580</td>
+                <td>55g</td>
+                <td>30g</td>
+                <td>18g</td>
+                <td>8g</td>
+              </tr>
+              <tr style="background-color: #f9f9f9;">
+                <td style="padding: 10px">Snacks</td>
+                <td>200</td>
+                <td>30g</td>
+                <td>10g</td>
+                <td>7g</td>
+                <td>5g</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Health Tips -->
+      <section class="metrics">
+        <h2>Nutrition Tips</h2>
+        <div class="overview">
+          <div class="card"><img src="img/greens.webp" alt="" /><h4>🥦 Eat Greens</h4><p>Include leafy vegetables in every meal.</p></div>
+          <div class="card"><img src="img/hydrated.jpg" alt="" /><h4>💧 Stay Hydrated</h4><p>Drink at least 8 cups of water daily.</p></div>
+          <div class="card"><img src="img/meals.jpg" alt="" /><h4>⏰ Consistent Meals</h4><p>Eat meals at regular times.</p></div>
+          <div class="card"><img src="img/sugar.jpg" alt="" /><h4>🚫 Skip Sugar</h4><p>Minimize added sugars and soda.</p></div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer>
+        <p>&copy; 2025 HealthTrack. All rights reserved.</p>
+      </footer>
+    </main>
+  </div>
+</body>
+</html>
